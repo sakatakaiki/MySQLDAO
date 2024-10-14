@@ -15,4 +15,5 @@ public interface OrderDao {
     public List<Order> findByStatus(String status);
     public int countOrderByDay(String date);
     public double earningOrderByDay(String date);
+    public List<Integer> getAllOrderIds(); 
 }

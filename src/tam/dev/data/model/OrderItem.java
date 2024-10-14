@@ -52,7 +52,11 @@ public class OrderItem {
         this.productId = productId;
     }
     
+    
     public Order getOrder(){
         return DatabaseDao.getInstance().getOrderDao().find(this.orderId);
+    }
+    public Product getProduct(){
+        return DatabaseDao.getInstance().getProductDao().find(this.productId);
     }
 }

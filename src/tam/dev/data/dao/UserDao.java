@@ -10,5 +10,7 @@ public interface UserDao {
 	public boolean delete(int userId);
 	public User find(int userId);
 	public List<User> findAll();
-
+    public User find(String email, String password);
+    public User find(String email);
+    public List<Integer> getAllUserIds();
 }
